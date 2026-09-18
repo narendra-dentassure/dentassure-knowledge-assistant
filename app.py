@@ -130,15 +130,9 @@ def main() -> None:
     st.markdown(
         """
         <style>
-        header[data-testid="stHeader"] { background: transparent; }
-        .stAppDeployButton, [data-testid="stToolbar"] { display: none !important; }
-        footer { visibility: hidden; }
-
         .block-container {
-            padding-top: 2.4rem;
+            padding-top: 3.2rem;
             padding-bottom: 3.5rem;
-            padding-left: 3rem;
-            padding-right: 2rem;
             max-width: 1180px;
         }
 

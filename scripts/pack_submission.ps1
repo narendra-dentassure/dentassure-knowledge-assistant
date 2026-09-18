@@ -21,7 +21,8 @@ $copy = @(
     "src",
     "tests",
     "data",
-    "scripts"
+    "scripts",
+    "project_flow_images"
 )
 
 foreach ($item in $copy) {

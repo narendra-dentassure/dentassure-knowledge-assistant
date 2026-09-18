@@ -18,12 +18,17 @@ logger = configure_logging()
 FIXTURE_DIR = PROJECT_ROOT / "data" / "live_fixtures"
 
 CITY_COORDS = {
-    "hyderabad": (17.385044, 78.486671),
     "kothapet": (17.3665, 78.548),
     "nagol": (17.366488, 78.54446),
+    "balanagar": (17.4669, 78.4492),
+    "kukatpally": (17.4948, 78.3996),
+    "attapur": (17.3616, 78.4294),
+    "kokapet": (17.401, 78.334),
+    "hyderabad": (17.385044, 78.486671),
     "bengaluru": (12.9716, 77.5946),
     "bangalore": (12.9716, 77.5946),
 }
+GENERIC_CITIES = frozenset({"hyderabad", "bengaluru", "bangalore"})
 
 # Informal English, Hinglish, and common clinic-counter spellings.
 TREATMENT_ALIASES = [
@@ -203,6 +208,10 @@ def classify_intent(question: str, history: str = "") -> str:
             "hyderabad",
             "kothapet",
             "nagol",
+            "balanagar",
+            "kukatpally",
+            "attapur",
+            "kokapet",
         )
     )
     treatments = extract_treatment_queries(question)
@@ -456,11 +465,25 @@ def haversine_km(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
 
 
 def _city_from_question(question: str) -> str | None:
+    """Prefer a locality (Balanagar) over the city name (Hyderabad) when both appear."""
     text = question.lower()
-    for city in CITY_COORDS:
-        if city in text:
-            return city
-    return None
+    hits = [name for name in CITY_COORDS if name in text]
+    if not hits:
+        return None
+    specific = [name for name in hits if name not in GENERIC_CITIES]
+    pool = specific or hits
+    return max(pool, key=len)
+
+
+def _clinic_text(clinic: dict[str, Any]) -> str:
+    return f"{clinic.get('name', '')} {_format_address(clinic.get('address'))}".lower()
+
+
+def _filter_clinics(clinics: list[dict[str, Any]], area: str) -> list[dict[str, Any]]:
+    if not area:
+        return clinics
+    needle = area.lower()
+    return [row for row in clinics if needle in _clinic_text(row)]
 
 
 def _format_address(address: Any) -> str:
@@ -479,15 +502,26 @@ def _format_address(address: Any) -> str:
 
 
 def format_clinic_answer(question: str, clinics: list[dict[str, Any]], mode: str) -> str:
-    origin = _city_from_question(question)
-    origin_xy = CITY_COORDS.get(origin or "", None)
-    lines = [
-        f"Network clinics ({'live DentAssure API' if mode == 'live' else 'offline sample directory'}):",
-        "",
-    ]
-    if not clinics:
-        return "No network clinic matched that city or name in the current source."
-    for clinic in clinics[:8]:
+    area = _city_from_question(question)
+    exact = _filter_clinics(clinics, area) if area else list(clinics)
+    unmatched = bool(area and area not in GENERIC_CITIES and not exact)
+    origin_xy = CITY_COORDS.get(area or "", None)
+    source = "live DentAssure API" if mode == "live" else "offline sample directory"
+    if unmatched:
+        return with_customer_care_notice(
+            f"I could not find a DentAssure network clinic listed in **{area.title()}** "
+            f"on the public clinic list ({source}). "
+            "I will not guess a clinic that is not in that list. "
+            "Call DentAssure Customer Care to confirm coverage in that area, "
+            "or name a locality that is on the list (for example Kothapet or Nagol)."
+        )
+    to_show = exact[:8]
+    lines = [f"Network clinics ({source}):", ""]
+    if not to_show:
+        return with_customer_care_notice(
+            "No network clinic matched that city or name in the current source."
+        )
+    for clinic in to_show:
         address = _format_address(clinic.get("address"))
         timings = clinic.get("timings") or {}
         today_hours = timings.get("Monday") or next(iter(timings.values()), "not listed")
@@ -495,10 +529,15 @@ def format_clinic_answer(question: str, clinics: list[dict[str, Any]], mode: str
         distance = ""
         if origin_xy and coords.get("lat") and coords.get("lng"):
             km = haversine_km(origin_xy[0], origin_xy[1], float(coords["lat"]), float(coords["lng"]))
-            distance = f"- Distance from {origin.title()}: about {km} km\n"
+            label = area.title() if area else "your area"
+            distance = f"- Distance from {label}: about {km} km\n"
         rating = clinic.get("rating")
         reviews = clinic.get("reviewCount")
-        rating_line = f"- Rating: {rating} ({reviews} reviews)" if rating else "- Rating: not published on the public card"
+        rating_line = (
+            f"- Rating: {rating} ({reviews} reviews)"
+            if rating
+            else "- Rating: not published on the public card"
+        )
         phone = clinic.get("mobileNumber") or clinic.get("phone") or clinic.get("contactNote")
         lines.append(
             f"**{clinic.get('name')}**\n"
@@ -511,7 +550,7 @@ def format_clinic_answer(question: str, clinics: list[dict[str, Any]], mode: str
             f"- Maps: {clinic.get('googleMapsUrl') or 'https://dentassureplans.co.in/our-network-clinics'}\n"
         )
     lines.append(
-        "If you need distance from your exact pin, tell me the area (for example Kothapet or Nagol)."
+        "If you need a different area, name the locality (for example Kothapet or Nagol)."
     )
     return with_customer_care_notice("\n".join(lines))
 
@@ -638,8 +677,7 @@ def _try_platform_tools(question: str, history: str = "") -> ToolAnswer | None:
             )
 
     if intent in {"clinic", "both"}:
-        city = _city_from_question(question) or ""
-        clinics, clinic_mode = list_clinics(city)
+        clinics, clinic_mode = list_clinics("")
         mode_used = clinic_mode if intent == "clinic" else mode_used
         parts.append(format_clinic_answer(question, clinics, clinic_mode))
         sources.append(

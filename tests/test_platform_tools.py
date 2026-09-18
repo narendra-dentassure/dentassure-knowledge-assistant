@@ -91,6 +91,23 @@ def test_offline_this_plan_follow_up_uses_history(monkeypatch) -> None:
     assert "STANDARD STEER" in result.answer
 
 
+def test_offline_balanagar_does_not_dump_all_clinics(monkeypatch) -> None:
+    monkeypatch.setenv("PLATFORM_MODE", "offline")
+    question = "Do we have clinic in Balanagar Hyderabad?"
+    assert classify_intent(question) == "clinic"
+    result = try_platform_tools(question)
+    assert result is not None
+    assert "I could not find a DentAssure network clinic listed in **Balanagar**" in result.answer
+    assert "I will not guess" in result.answer
+    assert "The Dental Centre" not in result.answer
+    assert "Alivio Dentistry" not in result.answer
+    assert "Nearest listed clinics:" not in result.answer
+    nagol = try_platform_tools("Clinic hours in Nagol")
+    assert nagol is not None
+    assert "The Dental Centre" in nagol.answer
+    assert "No DentAssure network clinic is listed" not in nagol.answer
+
+
 def test_named_plans_split_api_rag_and_ungrounded(monkeypatch) -> None:
     monkeypatch.setenv("PLATFORM_MODE", "offline")
     assert extract_plan_slug("SUPERIOR SPARKLE explain this plan") == "superior-sparkle"
