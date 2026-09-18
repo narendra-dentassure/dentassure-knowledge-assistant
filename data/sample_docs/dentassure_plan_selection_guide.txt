@@ -1,0 +1,75 @@
+# DentAssure Plan Selection Guide
+Source: sanitized product catalog from DentAssure plan documents and network brochures.
+Aliases: DentAssure, Denssure, Dent Assure, Denssure plan, how to take plan, which plan is best, enroll, buy, subscribe.
+
+## How to take a DentAssure plan
+
+1. Visit https://dentassureplans.co.in/ or ask the front desk at a DentAssure network clinic.
+2. Choose a plan based on who needs cover: individual, family, child, or employer group.
+3. Complete KYC and declare pre-existing dental conditions at enrolment.
+4. Pay the plan amount. Coverage applies at DentAssure in-network clinics.
+5. Member card / app shows remaining benefits. Cashless treatment is at network clinics. Emergency care is included on Premium family plans.
+6. Support: +91 888 668 6850, support@dentassureplans.com, www.dentassureplans.co.in
+   Address: Margadarshi Colony, Kothapet, Hyderabad, Telangana 500035.
+
+Dependents can be added within 30 days of primary enrolment. Waiting periods still apply as per the selected plan.
+
+## Which DentAssure plan is best?
+
+There is no single best plan for everyone. Match the plan to the need:
+
+- Best for everyday check-ups and scaling: STANDARD SECURE or DentAssure Care.
+- Best for families wanting cashless OPD dental cover: PREMIUM DENTAL CARE (family).
+- Best if implants, bone grafts, or major surgery are likely: SUPERIOR SHIELD (higher major-category discount from day 1).
+- Best for employer groups: DentAssure Corporate.
+- Best mid-tier individual benefits: DentAssure Plus or COMPLETE CARE.
+
+If the member only wants preventive visits, do not upsell Superior Shield. If they need RCT, crowns, or implants soon, Care/Standard Secure waiting tables matter.
+
+## STANDARD SECURE (PLAN0005)
+
+- Plan type: STANDARD. Example list price: Rs 9,999 per year.
+- Services worth: about Rs 99,990. Network: In-Network. Validity: 1 year from start.
+- Coverage table (discount vs private fee):
+  Day 1: Preventive 25%, Basic 15%, Minor 5%, Major 0%.
+  After 1 year: Preventive 35%, Basic 25%, Minor 15%, Major 10%.
+  After 2 years: Preventive 40%, Basic 30%, Minor 20%, Major 15%.
+- 100% free trial / day-1 preventive examples: consultation, scaling, fluoride, OPG, oral cancer screening, pit and fissure sealants, oral hygiene education.
+- 100% free basic/minor/major examples (as listed on the plan): deep scaling, simple filling, RCT, crown, simple extraction, wisdom tooth extraction.
+- Restrictions: waiting periods follow the coverage table. Exclusions: cosmetic procedures, orthodontics unless specified, experimental treatments.
+
+## SUPERIOR SHIELD (PLAN0054)
+
+- Plan type: SUPERIOR.
+- Coverage table:
+  Day 1: Preventive 26%, Basic 26%, Minor 26%, Major 26%.
+  After 1 year and after 2 years: 30% across Preventive, Basic, Minor, Major.
+- 100% free preventive examples: OP consultation, OPG, RVG/IOPA, scaling mild/moderate, polishing, fluoride, pit and fissure sealant, oral cancer screening.
+- Discounted major examples: dental implants type 1/2/3, All-on-4 / All-on-6 packages, GTR membranes, PRP/PRF.
+- Same exclusions: cosmetic, orthodontics unless specified, experimental treatments.
+- Choose this when the likely treatments are implants or surgical, not only cleaning.
+
+## COMPLETE CARE (PLAN0027)
+
+- Plan type: standard. Status: active.
+- Categories: preventive, basic, minor, major.
+- Frequency rules: cap/crown on a tooth cannot be claimed again for 5 years; denture cannot be repeated within 5 years; filling cannot be claimed within 2 years; X-rays are fixed per year.
+
+## PREMIUM DENTAL CARE (PREMIUM-2025)
+
+- Coverage amount: Rs 1,00,000. Premium: Rs 15,000 per year. Duration: 1 year. Members: up to 4.
+- Features: cashless at network clinics, emergency dental care, preventive check-ups, 24/7 support, no sub-limits on room rent.
+- How to use: show the plan at a network clinic; claims follow the policy documents for category percentages and waiting periods.
+
+## DentAssure Care vs Plus vs Corporate (policy products)
+
+- Care: annual limit Rs 15,000, 20% co-pay on restorative. Good starter individual plan.
+- Plus: annual limit Rs 40,000, 10% co-pay. Better if RCT/crowns are likely this year.
+- Corporate: annual limit Rs 75,000 per employee, 0% co-pay on preventive, 10% on specialist work. Best when the employer is paying.
+
+Preventive care is covered from day 1 on these policy products. Restorative work has a 30-day wait. RCT, crowns, and bridges have a 90-day wait unless the plan table above says otherwise for that product family.
+
+## Front-desk script
+
+Patient: "How do I take a Denssure / DentAssure plan, which is best?"
+Answer: "DentAssure has individual, family, child, and corporate options. If you only need cleaning and check-ups, Standard Secure or Care is enough. If you may need implants, look at Superior Shield. If the whole family should be cashless, take Premium Dental Care. I can enroll you on dentassureplans.co.in or at this clinic today after KYC."

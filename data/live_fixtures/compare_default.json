@@ -1,0 +1,50 @@
+{
+  "totalWithoutAnyPlan": 8000,
+  "compareMode": "withPremium",
+  "simpleSummary": {
+    "withoutPlan": { "label": "Without Any Plan", "totalAmount": 8000 },
+    "withPlan": {
+      "planName": "STANDARD STEER",
+      "planCode": "PLAN0052",
+      "planPremium": 1999,
+      "treatmentCost": 4950,
+      "totalPatientCost": 6949,
+      "totalSavings": 3050,
+      "netBenefit": 1051,
+      "waitingPeriodSummary": "All treatments available immediately"
+    },
+    "recommendation": {
+      "shouldBuyPlan": true,
+      "reason": "You save Rs 1051 even after paying Rs 1999 premium"
+    }
+  },
+  "top5Plans": [
+    {
+      "masterPlanName": "STANDARD STEER",
+      "masterPlanCode": "PLAN0052",
+      "planPremium": 1999,
+      "treatmentCost": 4950,
+      "totalPatientCost": 6949,
+      "netSavingsAfterPremium": 1051,
+      "rank": 1
+    },
+    {
+      "masterPlanName": "SUPERIOR SMILE",
+      "masterPlanCode": "PLAN0053",
+      "planPremium": 2026,
+      "treatmentCost": 4950,
+      "totalPatientCost": 6976,
+      "netSavingsAfterPremium": 1024,
+      "rank": 2
+    },
+    {
+      "masterPlanName": "SUPERIOR SHIELD",
+      "masterPlanCode": "PLAN0054",
+      "planPremium": 2026,
+      "treatmentCost": 4950,
+      "totalPatientCost": 6976,
+      "netSavingsAfterPremium": 1024,
+      "rank": 3
+    }
+  ]
+}

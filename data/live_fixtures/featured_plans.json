@@ -1,0 +1,13 @@
+{
+  "plans": [
+    {"code": "PLAN0057", "name": "Smart Saver", "premium": 499, "limit": 4990, "type": "smart", "focus": "Camp / 1-month preventive (consult, OPG, scaling)"},
+    {"code": "PLAN0052", "name": "STANDARD STEER", "premium": 1999, "limit": 19990, "type": "standard", "focus": "Essential preventive + one simple filling"},
+    {"code": "PLAN0049", "name": "STANDARD SIMPLE", "premium": 2999, "limit": 29990, "type": "standard", "focus": "Preventive and basic care"},
+    {"code": "PLAN0050", "name": "STANDARD SENSIBLE", "premium": 4999, "limit": 49990, "type": "standard", "focus": "RCT, crown, extraction plus preventive"},
+    {"code": "PLAN0051", "name": "STANDARD SECURE", "premium": 9999, "limit": 99990, "type": "standard", "focus": "Higher limit, gum work, wisdom extraction"},
+    {"code": "PLAN0053", "name": "SUPERIOR SMILE", "premium": 2026, "limit": 20260, "type": "superior", "focus": "Corrective: RCT, crowns, orthodontics"},
+    {"code": "PLAN0054", "name": "SUPERIOR SHIELD", "premium": 2026, "limit": 20260, "type": "superior", "focus": "Implants and surgical"},
+    {"code": "PLAN0055", "name": "SUPERIOR SPARKLE", "premium": 2026, "limit": 20260, "type": "superior", "focus": "Pediatric dentistry"}
+  ],
+  "source": "https://api.dentassureplans.co.in/v1/public/master-plans/featured"
+}

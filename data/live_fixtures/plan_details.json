@@ -1,0 +1,55 @@
+{
+  "standard-steer": {
+    "name": "STANDARD STEER",
+    "price": 1999,
+    "coverageLimit": 19990,
+    "description": "The STANDARD STEER Dental Plan is designed to offer essential and reliable dental care at an affordable cost. It focuses on preventive and basic dental treatments. Ideal for individuals and families who want straightforward coverage for check-ups, cleanings, and necessary procedures.",
+    "planFeaturedTreatments": [
+      "Doctor Consultation & Oral Health Examination",
+      "Full Mouth X-Ray",
+      "RVG / Bitewing X-rays",
+      "Scaling",
+      "Polishing",
+      "Fluoride Application",
+      "Pit & Fissure Sealants",
+      "Caries Risk Assessment",
+      "Oral Cancer Screening",
+      "One Simple Filling"
+    ],
+    "keyBenefits": [
+      "458+ treatments covered",
+      "Coverage limit: Rs 19,990",
+      "Starting at Rs 1,999",
+      "No hidden charges"
+    ],
+    "pageUrl": "https://dentassureplans.co.in/plan/standard-steer/details"
+  },
+  "superior-shield": {
+    "name": "SUPERIOR SHIELD",
+    "price": 2026,
+    "coverageLimit": 20260,
+    "description": "SUPERIOR SHIELD is for members who may need implants and surgical dental care, plus preventive maintenance.",
+    "planFeaturedTreatments": [
+      "Dental Implants",
+      "Full Mouth Implants",
+      "Bone Grafting & Ridge Augmentation",
+      "Scaling & Preventive Care",
+      "Oral Cancer Screening"
+    ],
+    "keyBenefits": [
+      "Implant-focused cover",
+      "Coverage limit: Rs 20,260",
+      "Starting at Rs 2,026"
+    ],
+    "pageUrl": "https://dentassureplans.co.in/plan/superior-shield/details"
+  },
+  "smart-saver": {
+    "name": "Smart Saver",
+    "price": 499,
+    "coverageLimit": 4990,
+    "description": "Smart Saver is a short-term preventive membership (consult, OPG, scaling), often used after dental camps. Validity is typically 1 month from enrolment.",
+    "planFeaturedTreatments": ["OP Consultation", "OPG", "Scaling"],
+    "keyBenefits": ["Starting at Rs 499", "Preventive camp plan"],
+    "pageUrl": "https://dentassureplans.co.in/plan/smart-saver/details"
+  }
+}

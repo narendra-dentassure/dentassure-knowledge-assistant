@@ -1,0 +1,27 @@
+# DentAssure network clinic directory (offline sample)
+
+Source: public network listing pattern from https://dentassureplans.co.in/our-network-clinics
+Contact if a clinic mobile is not published: DentAssure support +91 888 668 6850, support@dentassureplans.com
+
+## The Dental Centre, Hyderabad
+
+- Area: Road no 2, Nagol, Hyderabad, Telangana 500035
+- Hours: Monday to Sunday 10:00 AM - 08:00 PM
+- Cashless: yes, DentAssure in-network
+- Sample rating: 4.6 (128 reviews in sample data)
+- Distance hint: Nagol / Kothapet side of Hyderabad. Coordinates 17.3665, 78.5445
+- Maps: search "The Dental Centre Nagol Hyderabad"
+- Phone: not published on the public clinic card; use DentAssure support or the Google Maps listing
+
+## Alivio Dentistry, Hyderabad
+
+- City: Hyderabad, Telangana
+- Hours: Monday to Saturday 09:30 AM - 08:00 PM, Sunday Closed
+- Cashless: yes
+- Sample rating: 4.4
+- Specialties: cosmetic, implants
+- Phone: not published on the public clinic card; use DentAssure support +91 888 668 6850
+
+## How members ask clinic questions
+
+The assistant can answer: where is the clinic, city, area, operating hours today, rating, cashless or not, distance from Kothapet/Nagol/Hyderabad, and how to reach. If the member does not give a city, list Hyderabad network clinics from this directory or the live public API.

@@ -1,0 +1,62 @@
+{
+  "data": [
+    {
+      "id": "clinic-hyderabad-dental-centre",
+      "name": "The Dental Centre",
+      "rating": 4.6,
+      "reviewCount": 128,
+      "cashlessAvailable": true,
+      "networkStatus": "active",
+      "website": "https://dentassureplans.co.in/our-network-clinics",
+      "googleMapsUrl": "https://maps.google.com/?q=The+Dental+Centre+Nagol+Hyderabad",
+      "address": {
+        "addressLine1": "Road no 2",
+        "addressLine2": "Nagol",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "zipCode": "500035",
+        "country": "India"
+      },
+      "coordinates": { "lat": 17.366488, "lng": 78.54446 },
+      "timings": {
+        "Monday": "10:00 AM - 08:00 PM",
+        "Tuesday": "10:00 AM - 08:00 PM",
+        "Wednesday": "10:00 AM - 08:00 PM",
+        "Thursday": "10:00 AM - 08:00 PM",
+        "Friday": "10:00 AM - 08:00 PM",
+        "Saturday": "10:00 AM - 08:00 PM",
+        "Sunday": "10:00 AM - 08:00 PM"
+      },
+      "specialties": ["General dentistry", "Endodontics"],
+      "contactNote": "Public listing does not publish a clinic mobile. DentAssure support: +91 888 668 6850"
+    },
+    {
+      "id": "clinic-hyderabad-alivio",
+      "name": "Alivio Dentistry",
+      "rating": 4.4,
+      "reviewCount": 86,
+      "cashlessAvailable": true,
+      "networkStatus": "active",
+      "website": "https://dentassureplans.co.in/our-network-clinics",
+      "googleMapsUrl": "https://maps.google.com/?q=Alivio+Dentistry+Hyderabad",
+      "address": {
+        "addressLine1": "Network clinic",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "country": "India"
+      },
+      "coordinates": { "lat": 17.385044, "lng": 78.486671 },
+      "timings": {
+        "Monday": "09:30 AM - 08:00 PM",
+        "Tuesday": "09:30 AM - 08:00 PM",
+        "Wednesday": "09:30 AM - 08:00 PM",
+        "Thursday": "09:30 AM - 08:00 PM",
+        "Friday": "09:30 AM - 08:00 PM",
+        "Saturday": "09:30 AM - 08:00 PM",
+        "Sunday": "Closed"
+      },
+      "specialties": ["Cosmetic", "Implants"],
+      "contactNote": "Public listing does not publish a clinic mobile. DentAssure support: +91 888 668 6850"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "treatments": [
+    {
+      "id": "7238bc28-beb9-49d7-89dc-11ce468d396b",
+      "code": "D0406",
+      "name": "Root canal treatment - Anterior/Posterior - Simple - Per Tooth",
+      "category": "major",
+      "price": 5500
+    },
+    {
+      "id": "97ce8be5-7417-43c5-aa28-ea5b892d75d5",
+      "code": "D0202",
+      "name": "Scaling - Mild and Moderate calculus - full mouth",
+      "category": "preventive",
+      "price": 2000
+    },
+    {
+      "id": "ae4a53b4-7004-4834-ae9f-9ea5eb908736",
+      "code": "D0101",
+      "name": "OP Consultation",
+      "category": "preventive",
+      "price": 500
+    },
+    {
+      "id": "fixture-implant-1",
+      "code": "D0801",
+      "name": "Dental Implants – Type 1 - Per Tooth",
+      "category": "major",
+      "price": 25000
+    }
+  ]
+}
